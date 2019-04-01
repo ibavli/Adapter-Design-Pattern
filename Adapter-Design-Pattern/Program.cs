@@ -11,7 +11,8 @@ namespace Adapter_Design_Pattern
     {
         static void Main(string[] args)
         {
-            ProductManager productManager = new ProductManager(new MyLogger());
+            //ProductManager productManager = new ProductManager(new MyLogger());
+            ProductManager productManager = new ProductManager(new Log4NetAdapter());
 
             productManager.Save();
 
