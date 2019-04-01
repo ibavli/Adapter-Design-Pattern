@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Adapter_Design_Pattern.Logger;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,11 @@ namespace Adapter_Design_Pattern
     {
         static void Main(string[] args)
         {
+            ProductManager productManager = new ProductManager(new MyLogger());
+
+            productManager.Save();
+
+            Console.ReadKey();
         }
-    }
+    }  
 }
