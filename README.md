@@ -1,4 +1,4 @@
-## Abstract Factory Design Pattern
+## Adapter Design Pattern
 
 ### Çalışma Mantığı
 
